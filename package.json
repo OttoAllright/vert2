@@ -1,0 +1,21 @@
+{
+  "name": "newproject",
+  "version": "1.0.0",
+  "main": "server.js",
+  "dependencies": {
+    "@vreden/youtube_scraper": "^1.2.3",
+    "body-parser": "^1.20.3",
+    "express": "^4.21.2",
+    "fetch": "^1.1.0",
+    "fs": "^0.0.1-security",
+    "node": "^22.13.0",
+    "node-fetch": "^3.3.2",
+    "nodemon": "^3.1.9",
+    "path": "^0.12.7",
+    "ytdl-core": "^4.11.5"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  }
+}

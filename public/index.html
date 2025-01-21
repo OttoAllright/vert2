@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Y2Mate - Convertidor de YouTube a MP3</title>
+    <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+    <h1>YT</h1>
+    <h2>Convertidor de YouTube a MP3</h2>
+    <form id="url-form" action="/download" method="POST">
+        <input type="text" name="link" required>
+        <select id="type-select" name="type">
+            <option value="video">Video</option>
+            <option value="audio">Audio</option>
+        </select>
+        <select id="quality-select" name="quality" required>
+            <!-- Opciones dinámicamente añadidas aquí -->
+        </select>
+        <button type="submit">Start</button>
+    </form>
+
+    <div id="loading-bar" style="display:none;">
+        <div id="loading-progress">Cargando</div>
+    </div>
+
+    <img id="thumbnail-img" src="" alt="thumbnail" style="display:none; max-width: 200px;"/>
+    <a id="download-btn" href="#" style="display:none;" target="_blank">Descargar</a>
+
+    <footer>
+        <p> Si tienes algun problema reproduciendo video debes instalar el driver de AV1 de Windows que es el
+        </p>
+        <a href="https://apps.microsoft.com/detail/9mvzqvxjbq9v?hl=en-US&gl=" class="styled-link">driver</a>
+    </footer>
+    <script src="process.js"></script>
+  
+</body>
+</html>
+
+

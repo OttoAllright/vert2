@@ -63,7 +63,7 @@ form.addEventListener('submit', async function(event) {
 
         if (progress >= 100) {
             clearInterval(interval);
-            loadingProgress.textContent = '100% ¡Listo!';
+            loadingProgress.textContent = '100% ¡Ya casi esta listo tu enlace espera un poco mas!';
         }
     }, 200);
 

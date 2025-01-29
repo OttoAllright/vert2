@@ -43,25 +43,3 @@ app.post('/download', async (req, res) => {
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
 });
-
-
-
-// const url = 'https://www.youtube.com/watch?v=4LfJnj66HVQ'
-// const quality = "128"
-
-
-// ytmp3(url, quality)
-//     .then(result => {
-//         if (result.status) {
-//             console.log('Download Link:', result.download);
-//             console.log('Metadata:', result.metadata);
-           
-
-//         } else {
-//             console.error('Error:', result.result);
-//         }
-//     });
-//     app.get('/api/download-url', (req, res) => {
-//         // Enviar solo la URL en la respuesta
-//         res.json({ url: downloadLink.url });
-//       });
